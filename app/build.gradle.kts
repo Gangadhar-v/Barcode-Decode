@@ -42,7 +42,18 @@ dependencies {
     implementation(libs.material)
     implementation(libs.androidx.activity)
     implementation(libs.androidx.constraintlayout)
+    implementation(libs.androidx.camera.core)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
+    implementation ("com.google.mlkit:barcode-scanning:17.3.0")
+    implementation ("com.squareup.retrofit2:retrofit:2.9.0")
+    implementation ("com.squareup.retrofit2:converter-gson:2.9.0")
+    // CameraX Core library
+    implementation ("androidx.camera:camera-camera2:1.1.0")
+// CameraX Lifecycle library to tie camera lifecycle with activity/fragment
+    implementation ("androidx.camera:camera-lifecycle:1.1.0")
+// CameraX View library to display the camera preview in a view
+    implementation ("androidx.camera:camera-view:1.1.0")
+
 }
